@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <webapi>
+            <acsnet_api>
+                <active>0</active>
+                <client_id>79735c7e-c2a8-4922-bce6-5271a902b014</client_id>
+                <client_secret>yn9v9CCTc7EyLhhBNf1WH0gc1yRkG7JYkeN2MNellJNKhdLLH7kTQDAIFHK7ie9bQWQdp7HAC7bsOwZ4
+                </client_secret>
+                <grant_type>client_credentials</grant_type>
+                <scope>ecommerce-acsbr-ho</scope>
+                <token_url>https://login.sdasystems.org/connect/token</token_url>
+                <order_url>https://api-ecommerce-acs-br-staging.sdasystems.org/api/v1/order</order_url>
+            </acsnet_api>
+        </webapi>
+    </default>
+</config>

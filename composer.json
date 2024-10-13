@@ -1,0 +1,19 @@
+{
+    "name": "luizmarcello/acsnetapi",
+    "description": "Modulo para integracao da API.",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Luizmarcello\\Acsnetapi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "luizmarcello",
+            "email": "luizmarcello.codes@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}

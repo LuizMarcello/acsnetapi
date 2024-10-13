@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="webapi" translate="label" type="text" sortOrder="400" showInDefault="1" showInWebsite="1"
+                 showInStore="1">
+            <label>Magento Web API</label>
+            <tab>service</tab>
+            <resource>Magento_Webapi::config_webapi</resource>
+            <group id="acsnet_api" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>Dados Api AcsNet Token</label>
+                <field id="active" translate="label" type="select" sortOrder="0" showInDefault="1" showInWebsite="1"
+                       canRestore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="client_id" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1"
+                       showInStore="0" canRestore="1">
+                    <label>Client Id</label>
+                </field>
+                <field id="client_secret" translate="label" type="text" sortOrder="2" showInDefault="1"
+                       showInWebsite="1" showInStore="0" canRestore="1">
+                    <label>Client Secret</label>
+                </field>
+                <field id="grant_type" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1"
+                       showInStore="0" canRestore="1">
+                    <label>Grant Type</label>
+                </field>
+                <field id="scope" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1"
+                       showInStore="0" canRestore="1">
+                    <label>Scope</label>
+                </field>
+                <field id="token_url" translate="label" sortOrder="5" type="text" showInDefault="1" showInWebsite="1"
+                       showInStore="0" canRestore="1">
+                    <label>Access Token URL</label>
+                </field>
+                <field id="order_url" translate="label" sortOrder="6" type="text" showInDefault="1" showInWebsite="1"
+                       showInStore="0" canRestore="1">
+                    <label>Order URL</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

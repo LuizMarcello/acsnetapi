@@ -1,0 +1,39 @@
+{
+    "sales_order": {
+        "column": {
+            "ordertype": true,
+            "schooldocnumber": true,
+            "schoolseries": true,
+            "schoolyear": true,
+            "schoolclass": true,
+            "studentname": true
+        }
+    },
+    "quote": {
+        "column": {
+            "schooldocnumber": true,
+            "schoolseries": true,
+            "schoolyear": true,
+            "schoolclass": true,
+            "studentname": true
+        }
+    },
+    "quote_item": {
+        "column": {
+            "schooldocnumber": true,
+            "schoolseries": true,
+            "schoolyear": true,
+            "schoolclass": true,
+            "studentname": true
+        }
+    },
+    "sales_order_item": {
+        "column": {
+            "schooldocnumber": true,
+            "schoolseries": true,
+            "schoolyear": true,
+            "schoolclass": true,
+            "studentname": true
+        }
+    }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="sales_order_place_after">
+        <observer name="order_place_after_observer" instance="AcsNet\Api\Observer\OrderPlaceAfterObserver"/>
+    </event>
+
+    <event name="sales_model_service_quote_submit_before">
+        <observer name="ascnet_api_transfer_schooldocnumber"
+                  instance="AcsNet\Api\Observer\TransferCustomColumnObserver"/>
+        <observer name="acsnet_api_transfer_schoolseries"
+                  instance="AcsNet\Api\Observer\TransferCustomColumnObserver"/>
+        <observer name="acsnet_api_transfer_schoolyear"
+                  instance="AcsNet\Api\Observer\TransferCustomColumnObserverr"/>
+        <observer name="acsnet_api_transfer_schoolclass"
+                  instance="AcsNet\Api\Observer\TransferCustomColumnObserver"/>
+        <observer name="acsnet_api_transfer_studentname"
+                  instance="AcsNet\Api\Observer\TransferCustomColumnObserver"/>
+    </event>
+</config>
